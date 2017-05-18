@@ -1,3 +1,4 @@
+_
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
@@ -9,3 +10,4 @@ This app lets users search the GiphyApi for gifs. They can click on images to tw
 *run "npm install"
 *run "npm start"
 * View live demo at my [Surge Page](htt://giphy.surge.sh)
+_
