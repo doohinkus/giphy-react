@@ -11,4 +11,5 @@ This app lets users search the GiphyApi for gifs. They can click on images to tw
 * cd into repository
 * run "npm install"
 * run "npm start"
-* View live demo at my [Surge Page](http://giphy.surge.sh)
+
+View a live demo at my [Surge Page](http://giphy.surge.sh)
