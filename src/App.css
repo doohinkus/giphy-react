@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+body{
+  background-color: #0375b4;
+
+
+}
+.App {
+  text-align: center;
+}
+
+
+.clip{
+  overflow: hidden;
+}
+.fade{
+  opacity: 0;
+}
+.fade-enter{
+  opacity: 1;
+  transition: opacity .9s ease-in-out;
+}
+.fade-enter-active{
+
+  margin-left:0px;
+
+}
+.flexy{
+  display: flex;
+  justify-content: center;
+
+}
+input[type="text"]{
+  width:80%;
+  padding:1em;
+  background: rbga(0,0,0, 0.5);
+}
+button{
+  padding:1em;
+}
+.hero{
+
+  height: 25em;
+  width: 100%;
+  background-image: url(./img/bojack.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.giphs{
+ /*display:flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding: 15px;*/
+}
+.masonry {
+    /*margin: 1.5em 0;*/
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    /*here's the prob*/
+    overflow: hidden;
+}
+.wrapper {
+  z-index:100;
+    width: 95%;
+    margin: 3em auto;
+}
+.item {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    /*background: #fff;*/
+    padding: 1em;
+    margin: 0 0 1.5em;
+    /*width: 90%;*/
+    box-sizing: border-box;
+
+    /*overflow: hidden;*/
+
+}
+
+.img{
+    /*transition: transform .3s ease-in-out;*/
+    /*border: 1px solid #efefef;*/
+    z-index:99;
+
+
+}
+@keyframes bounceUp {
+    0% {transform: scale(.7); transform: rotate(-5deg)}
+    50% {transform: scale(1.1); transform: rotate(15deg)}
+    100% {transform: scale(.9);}
+}
+.img img{
+  box-shadow: 3px 3px 5px #222;
+}
+.img:hover{
+
+
+  /*margin-top: 13px;*/
+  /*width:105%;
+  height:105%;*/
+  animation: bounceUp .3s ease-in;
+  z-index:9999;
+  /*-webkit-transform-style: preserve-3d;*/
+  /*transform: scale(1.1);*/
+
+
+}
+.info{
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 11px;
+  /*background-color: #333;*/
+  width: 89%;
+  margin-left:center;
+  margin-right:auto;
+
+}
+
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+.top{
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 2px rgba(26, 0, 0, 0.5);
+  /*background-color: #6ABDDB;*/
+  background-color: #ffce00;
+  box-shadow: 0px 0px 9px #555;
+  position: fixed;
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  margin:0;
+  padding:.25em;
+  z-index: 9999999;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+input[type="text"] {
+  float: left;
+  width: 230px;
+  padding: 15px 5px 5px 5px;
+  margin-top: 5px;
+  margin-left: 3px;
+  border: 1px solid #999999;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.solid {
+  float: left;
+  cursor: pointer;
+  width: 130px;
+  padding: 8px 6px;
+  margin-left: 20px;
+  background-color: #f8b838;
+  color: rgba(134, 79, 11, 0.8);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #99631d;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7), 0 -1px 0 rgba(64, 38, 5, 0.9);
+  transition: background 0.2s ease-out;
+}
+
+.solid:hover, .solid:focus {
+  /*background: #ffd842;*/
+  background-color: orange;
+
+}
+
+.solid:active {
+  background: #f6a000;
+  position: relative;
+  top: 5px;
+  border: 1px solid #702d00;
+
+}
